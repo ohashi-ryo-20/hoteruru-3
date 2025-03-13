@@ -64,6 +64,28 @@ footer {
 	border-color: #5196a6 !important;
 }
 
+.moattravel-pre-wrap {
+	/* 改行文字で行を折り返す */
+	white-space: pre-wrap;
+}
+
+.moattravel-link-danger {
+	color: #f2594b;
+}
+
+.moattravel-link-danger:hover {
+	color: #a63c3c;
+}
+
+.moattravel-btn-danger {
+	background-color: #f2594b !important;
+	transition: 0.1s;
+}
+
+.moattravel-btn-danger:hover {
+	opacity: 0.8;
+}
+
 @media screen and (min-width: 1400px) {
 	.moattravel-container {
 		max-width: 1200px;
