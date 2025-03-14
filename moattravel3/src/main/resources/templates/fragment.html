@@ -33,11 +33,13 @@
 				<a class="navbar-brand" th:href="@{/}">
 					<img class="moattravel-logo me-1" th:src="@{/images/logo.png}" alt="moat Travel">
 				</a>
+
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 					aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
+
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ms-auto">
 						<!-- 未ログインであれば表示する -->
@@ -57,7 +59,10 @@
 
 							<div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownGeneral">
 								<a class="dropdown-item moattravel-dropdown-item" th:href="@{/user}">会員情報</a>
+								<a class="dropdown-item moattravel-dropdown-item" th:href="@{/reservations}">予約一覧</a>
+
 								<div class="dropdown-divider"></div>
+
 								<a class="dropdown-item moattravel-dropdown-item" th:href="@{/logout}"
 									onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
 									ログアウト
@@ -74,6 +79,7 @@
 							</a>
 
 							<div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownAdmin">
+								<a class="dropdown-item moattravel-dropdown-item" th:href="@{/admin/users}">会員一覧</a>
 								<a class="dropdown-item moattravel-dropdown-item" th:href="@{/admin/houses}">民宿一覧</a>
 
 								<div class="dropdown-divider"></div>
@@ -87,7 +93,6 @@
 						</li>
 					</ul>
 				</div>
-
 			</div>
 		</nav>
 	</div>
